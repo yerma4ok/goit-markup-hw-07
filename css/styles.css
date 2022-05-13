@@ -740,21 +740,21 @@ body {
   padding-top: 94px;
 }
 
-.button-list-div {
+.portfolio-button {
   margin-bottom: 50px;
 }
 
-.button-list {
+.portfolio-button__list {
   display: flex;
   justify-content: center;
   margin: 0;
 }
 
-.button-list > .iten:not(:last-child) {
+.portfolio-button__list > .iten:not(:last-child) {
   margin-right: 8px;
 }
 
-.button-current-activ {
+.portfolio-button__current-activ {
   display: inline-block;
   align-items: center;
   text-align: center;
@@ -774,7 +774,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-current {
+.portfolio-button__current {
   display: inline-block;
   align-items: center;
   text-align: center;
@@ -794,8 +794,8 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-current:hover,
-.button-current:focus {
+.portfolio-button__current:hover,
+.portfolio-button__current:focus {
   color: var(--color-text-reserve);
   background-color: #2196f3;
   border-color: var(--activ-color);
@@ -803,12 +803,12 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.user-portfolio-items {
+.user-portfolio {
   display: flex;
   flex-wrap: wrap;
 }
 
-.user-portfolio-element {
+.user-portfolio__element {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -818,16 +818,16 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-portfolio-element:hover .user-portfolio-text {
+.user-portfolio__element:hover .user-portfolio__text {
   transform: translateY(0);
 }
 
-.portfolio-img-text {
+.user-portfolio__img {
   position: relative;
   overflow: hidden;
 }
 
-.user-portfolio-text {
+.user-portfolio__text {
   position: absolute;
   top: 0;
   background-color: rgba(33, 150, 243, 0.9);
@@ -842,29 +842,29 @@ body {
   overflow: auto;
 }
 
-.user-portfolio-element:hover {
+.user-portfolio__element:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.user-portfolio-element:nth-child(3n) {
+.user-portfolio__element:nth-child(3n) {
   margin-right: 0;
 }
 
-.user-portfolio-element:nth-last-child(-n + 3) {
+.user-portfolio__element:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.user-portfolio-element img {
+.user-portfolio__element img {
   display: block;
 }
 
-.portfolio-title {
+.user-portfolio__title {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
 }
 
-.user-portfolio-name {
+.user-portfolio__name {
   display: block;
   margin: 0 0 4px 0;
 
@@ -874,7 +874,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.user-portfolio-type {
+.user-portfolio__type {
   display: block;
   margin: 0;
 
@@ -911,7 +911,7 @@ body {
   transform: translate(-50%, -50%) scale(1) rotateY(0);
 }
 
-.modal-close-btn {
+.modal__close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -929,8 +929,8 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal__close-btn:hover,
+.modal__close-btn:focus {
   fill: var(--activ-color);
 }
 
@@ -940,7 +940,7 @@ body {
   visibility: hidden;
 }
 
-.modal-title {
+.modal__title {
   display: flex;
   text-align: center;
   position: absolute;
@@ -955,7 +955,7 @@ body {
   padding: 0;
 }
 
-.modal-label {
+.modal__label {
   display: flex;
   flex-direction: column;
   margin-left: 40px;
@@ -966,16 +966,16 @@ body {
   color: var(--primary-text-color);
 }
 
-.modal-user-name {
+.modal__user-name {
   margin-top: 75px;
 }
 
-.modal-input-div {
+.modal__input-div {
   position: relative;
   margin: 0 40px 10px 40px;
 }
 
-.modal-input {
+.modal__input {
   box-sizing: border-box;
   width: 448px;
   height: 40px;
@@ -987,7 +987,7 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input-icon {
+.modal__input-icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -996,15 +996,15 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus {
+.modal__input:focus {
   border-color: var(--activ-color);
 }
 
-.modal-input:focus + .modal-input-icon {
+.modal__input:focus + .modal__input-icon {
   fill: var(--activ-color);
 }
 
-.modal-text {
+.modal__text {
   position: relative;
   margin: 0 40px 10px 40px;
   display: flex;
@@ -1024,23 +1024,23 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-text::placeholder {
+.modal__text::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-text:focus {
+.modal__text:focus {
   border-color: var(--activ-color);
 }
 
-.modal-field-div {
+.modal__field-div {
   position: relative;
   margin: 20px 40px 30px 54px;
 }
 
-.chek-text {
+.modal__chek-text {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -1049,7 +1049,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.chek-text-link {
+.modal__chek-text-link {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -1060,7 +1060,7 @@ body {
   margin-left: 4px;
 }
 
-.chek-text::before {
+.modal__chek-text::before {
   content: "";
   width: 16px;
   height: 15px;
@@ -1069,7 +1069,7 @@ body {
   border-radius: 2px;
 }
 
-.input-chek:checked + .chek-text::before {
+.modal__input-chek:checked + .modal__chek-text::before {
   border: 0.2px solid #ffffff;
   background-image: url(../img/check-modal.svg);
   background-repeat: no-repeat;
@@ -1089,7 +1089,7 @@ body {
   margin: -1px;
 }
 
-.button-chek {
+.modal__button-chek {
   display: inline-block;
   text-align: center;
   align-items: center;
@@ -1113,8 +1113,8 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-chek:hover,
-.button-chek:focus {
+.modal__button-chek:hover,
+.modal__button-chek:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
