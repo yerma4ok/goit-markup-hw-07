@@ -15,19 +15,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="border">
       <div class="container header-div">
         <div class="header-div">
-          <a href="" class="header-div__logo">
-            <span class="header-div__logo-1">Web</span><span class="header-div__logo-2">Studio</span></a
+          <a href="" class="logo">
+            <span>Web</span><span class="logo__title">Studio</span></a
           >
           <nav>
             <ul class="site-nav list">
               <li class="site-nav__iten">
-                <a href="./index.html" class="site-nav__activ">Студия</a>
+                <a href="./index.html" class="site-nav__list site-nav__list--activ">Студия</a>
               </li>
               <li class="site-nav__iten">
                 <a href="./portfolio.html" class="site-nav__list">Портфолио</a>
@@ -63,7 +64,7 @@
     <main>
       <section class="heading">
         <div class="container">
-          <h1 class="heading__text title">
+          <h1 class="title heading__text">
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
           <button type="button" class="heading__button-activ" data-modal-open>
@@ -480,99 +481,99 @@
     <footer class="footer-container">
       <div class="container footer-contacts">
         <div class="footer-div">
-          <a href="" class="footer-div__logo logo-footer">
-            <span class="footer-div__logo-1">Web</span><span class="footer-div__logo-2">Studio</span></a
+          <a href="" class="logo logo-footer">
+            <span>Web</span><span class="logo__title logo__title--invers">Studio</span></a
           >
-          <address class="footer-div__address">
-            <ul class="footer-div__contacts list">
-              <li class="footer-div__iten">
+          <address class="address">
+            <ul class="address__contacts list">
+              <li class="address__iten">
                 <a
                   href="https://goo.gl/maps/tQwy83gQyjdD5JpE6"
-                  class="footer-div__address-activ"
+                  class="address__list address__list--activ"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer-div__iten">
-                <a href="mailto:info@devstudio.com" class="footer-div__address-list"
+              <li class="address__iten">
+                <a href="mailto:info@devstudio.com" class="address__list"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="footer-div__iten">
-                <a href="tel:+380961111111" class="footer-div__address-list"
+              <li class="address__iten">
+                <a href="tel:+380961111111" class="address__list"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-box">
-          <h2 class="footer-box__title">Присоединяйтесь</h2>
-          <ul class="footer-box__team list">
-            <li class="footer-box__list">
+        <div class="social-box">
+          <h2 class="social-box__title">Присоединяйтесь</h2>
+          <ul class="social-box__team list">
+            <li class="social-box__list">
               <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="footer-box__icon"
+                class="social-box__icon"
               >
-                <svg class="footer-box__user-icon" width="20" height="20">
+                <svg class="social-box__user-icon" width="20" height="20">
                   <use href="./img/symbol-defs.svg#icon-instagram-f"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-box__list">
+            <li class="social-box__list">
               <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="footer-box__icon"
+                class="social-box__icon"
               >
-                <svg class="footer-box__user-icon" width="20" height="20">
+                <svg class="social-box__user-icon" width="20" height="20">
                   <use href="./img/symbol-defs.svg#icon-twitter-f"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-box__list">
+            <li class="social-box__list">
               <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="footer-box__icon"
+                class="social-box__icon"
               >
-                <svg class="footer-box__user-icon" width="20" height="20">
+                <svg class="social-box__user-icon" width="20" height="20">
                   <use href="./img/symbol-defs.svg#icon-facebook-f"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-box__list">
+            <li class="social-box__list">
               <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="footer-box__icon"
+                class="social-box__icon"
               >
-                <svg class="footer-box__user-icon" width="20" height="20">
+                <svg class="social-box__user-icon" width="20" height="20">
                   <use href="./img/symbol-defs.svg#icon-linkedin-f"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-mail">
-          <h2 class="footer-box__title">Подпишитесь на рассылку</h2>
-          <form class="footer-mail__form">
-            <label class="footer-mail__label">
+        <div class="user-mail">
+          <h2 class="social-box__title">Подпишитесь на рассылку</h2>
+          <form class="user-mail__form">
+            <label class="user-mail__label">
               <input
                 type="email"
-                class="footer-mail__input"
+                class="user-mail__input"
                 name="email"
                 placeholder="E-mail"
                 required
               />
             </label>
-            <button type="submit" class="footer-mail__button">
+            <button type="submit" class="user-mail__button">
               Подписаться
-              <svg class="footer-mail__icon" width="24" height="24">
+              <svg class="user-mail__icon" width="24" height="24">
                 <use href="./img/symbol-defs.svg#icon-send-f"></use>
               </svg>
             </button>
