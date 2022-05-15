@@ -15,8 +15,7 @@
   }
 
   &__team {
-    display: flex;
-    justify-content: center;
+    @extend %flex-justify-content;
   }
 
   &__list {

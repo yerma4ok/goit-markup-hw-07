@@ -39,6 +39,7 @@
     }
     &:hover {
       color: var(--activ-color);
+      
       &::after {
         content: "";
         height: 4px;
@@ -52,8 +53,7 @@
     }
     &--activ {
       display: block;
-      padding-top: 32px;
-      padding-bottom: 32px;
+      @extend %padding-hight;
 
       font-weight: 500;
       font-size: 14px;

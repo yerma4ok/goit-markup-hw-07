@@ -3,13 +3,11 @@
   margin-top: 16px;
 
   &__social {
-    display: flex;
-    justify-content: center;
+    @extend %flex-justify-content;
   }
 
   &__icon {
-    display: flex;
-    justify-content: center;
+    @extend %flex-justify-content;
     align-items: center;
     width: 44px;
     height: 44px;
